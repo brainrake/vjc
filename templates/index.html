@@ -18,12 +18,10 @@
     </div>
     <p class="meta">by <b>{{article.user}}</b> on {{article.date_published|date}}</p>
     <br/>
-{% empty %}
-    {% trans 'No results.' %}
 {% endfor %}
 <br/>
 <br/>
-<a href="{%url blog.views.articles%}">older articles...</a>
+<a href="{%url exo.blog.views.articles%}">older articles...</a>
 {% endblock %}
 
 

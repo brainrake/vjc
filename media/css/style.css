@@ -26,9 +26,9 @@ h1+.meta, h2+.meta, h3+.meta, p+.meta{ margin-top: -10px;}
 ul.errorlist, div.error{ color: #a44; }
 
 /* index */
-.bigbutton{ width:189px; height: 30px; border:2px solid #666; margin-left: 28px; vertical-align:bottom; font-size:1.8em; font-weight:bold; -webkit-border-radius:10px; display:inline-block;}
+.bigbutton{ width:192px; height: 30px; border:2px solid #666; margin-left: 24px; vertical-align:bottom; font-size:1.8em; font-weight:bold; -webkit-border-radius:10px; display:inline-block;}
 .bigbutton{ vertical-align:bottom; padding-top:170px;padding-left:8px;}
 .bigbutton:first-child{ margin-left: 0px; }
-#bookavj{ background-image: url('/media/img/bookavj.png');}
-#rentaprojector{ }
-#seeourprojects{ }
+#bookavj{ background-image: url('/media/img/bookavj.jpg');}
+#rentaprojector{ background: transparent url('/media/img/rentaprojector.jpg') center center;}
+#seeourprojects{ background: transparent url('/media/img/seeourprojects.jpg') center center;}

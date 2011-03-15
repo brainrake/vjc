@@ -109,5 +109,5 @@ INSTALLED_APPS = (
 DATETIME_FORMAT = 'Y-m-d'
 DATETIME_FORMAT = 'c'
 
-import sys
-sys.path.append('exo')
+#import sys
+#sys.path.append('exo')

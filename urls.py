@@ -4,8 +4,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    (r'^$', 'blog.views.index', {'template':'index.html'}),
-    (r'^blog/', include('blog.urls')),
+    (r'^$', 'exo.blog.views.index', {'template':'index.html'}),
+    (r'^blog/', include('exo.blog.urls')),
 
 
     #(r'^artists/', include('artists.urls')),
