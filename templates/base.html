@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>{% block headtitle %}vjcentrum{% endblock %}</title>
+    <link rel="stylesheet" href="/media/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/base-min.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/style.css" type="text/css">
+</head>
+<body>
+<div id="doc" class="yui-t7">
+    <div id="hd">
+        <div class="hd-hd">
+            <div class="left">
+                <h1><a href="/">vjcentrum</a></h1>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <br/>
+        <div class="hd-menu">
+            <div class="left">
+                <a href="/">home</a>&nbsp;&nbsp;
+                <a href="/about/">about</a>&nbsp;&nbsp;
+                <a href="/artists/">artists</a>&nbsp;&nbsp;
+                <!--<a href="/events/">program</a>&nbsp;&nbsp;-->
+                <!--<a href="/contact/">kapcsolat</a>&nbsp;&nbsp;-->
+                <a href="/projects">projects</a>&nbsp;&nbsp;
+                <!--
+                <a href="/contact/">kapcsolat</a>&nbsp;&nbsp;
+                -->
+                <a href="/booking/">booking/rental</a>&nbsp;&nbsp;
+            </div>
+            <div class="right">
+                <input placeholder="search" style="background:#000; color:#fff; border:1px solid #aaa;" />
+                <!--fb login?-->
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="bd">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div id="ft">
+        <div>
+            [ <a href="/">home</a> ]
+            &nbsp;&nbsp;
+            [ <a href="/contact/">contact</a> ]
+            
+        </div>
+        <div>
+            &copy; vjcentrum.hu 2011
+        </div>
+    </div>
+</div>
+</body>
+</html>

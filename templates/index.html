@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<div>
+    <a href="/booking/" id="bookavj" class="bigbutton left">Book a VJ</a>
+    <a href="/rental/" id="rentaprojector" class="bigbutton left">Rent Equipment</a>
+    <a href="/projects/" id="seeourprojects" class="bigbutton left">See our Projects</a>
+    <div class="clear"></div>
+</div>
+
+
+{% for article in object_list %}
+    <div class="blog-article-list-item">
+        <h3><a href="{{article.get_absolute_url}}">{{article.title}}</a></h3>
+        {{article.content|urlize|linebreaks|truncatewords:20}}
+        <p>asdasd</p>
+        <a href="{{object.get_absolute_url}}">more...</a>
+    </div>
+    <p class="meta">by <b>{{article.user}}</b> on {{article.date_published|date}}</p>
+    <br/>
+{% empty %}
+    {% trans 'No results.' %}
+{% endfor %}
+<br/>
+<br/>
+<a href="{%url blog.views.articles%}">older articles...</a>
+{% endblock %}
+
+

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="crew">
+    <h2><a href='/vj/{{crew.id}}/'>{{crew.name}}</a></h2>
+    <p class='meta'>tagok: {% for user in crew.members.all%}<a href="">{{user}}</a> {%endfor%}</p>
+
+    <h3>rólunk</h3>
+    {{crew.description|linebreaks}}
+
+    <h3>elérhetőség</h3>
+    <table class="crew_contact">
+        {% if crew.website%}<tr><th>weboldal</th><td><a href="{{crew.website}}">{{crew.website}}</a></td></tr>{%endif%}
+        {% if crew.email  %}<tr><th>e-mail</th><td>{{crew.email}}</td></tr>{%endif%}
+        {% if crew.phone  %}<tr><th>telefon</th><td>{{crew.phone}}</td></tr>{%endif%}
+    </table>
+</div>
+{% endblock %}
