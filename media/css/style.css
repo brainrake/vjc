@@ -6,28 +6,26 @@ html    { background:#111; color:#fff; }
 #bd{ padding-bottom:60px; }
 
 h1,h2,h3{ margin:30px 0px 10px 0px; font-weight:bold; }
-h1{ font-size:1.5em; margin:0px; } h1>a{ color:#666; }
+h1{ font-size:1.5em; margin:0px; }
 h2{ font-size:1.5em; }
 h3{ font-size:1.3em; }
 
-a, a:visited{ text-decoration:none; color:#7bf; }
+a{ text-decoration:none; color:#7bf; }
 a:hover{ text-decoration:underline; }
 
-p{ margin-bottom:6px; }
-
 th,td{ padding: 6px; vertical-align:top; }
-th { color:#000; }
+th{ color:#000; }
+
 
 div.left{float:left;} div.right{float:right;} div.clear{clear:both;}
 
 
-
 .meta{ color:#888; }
-h1+.meta, h2+.meta, h3+.meta{ margin-top: -10px; margin-bottom:10px;}
+h1+.meta, h2+.meta, h3+.meta, p+.meta{ margin-top: -10px;}
 
 ul.errorlist, div.error{ color: #a44; }
 
-
+/* index */
 .bigbutton{ width:189px; height: 30px; border:2px solid #666; margin-left: 28px; vertical-align:bottom; font-size:1.8em; font-weight:bold; -webkit-border-radius:10px; display:inline-block;}
 .bigbutton{ vertical-align:bottom; padding-top:170px;padding-left:8px;}
 .bigbutton:first-child{ margin-left: 0px; }

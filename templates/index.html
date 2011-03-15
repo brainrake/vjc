@@ -14,7 +14,7 @@
         <h3><a href="{{article.get_absolute_url}}">{{article.title}}</a></h3>
         {{article.content|urlize|linebreaks|truncatewords:20}}
         <p>asdasd</p>
-        <a href="{{object.get_absolute_url}}">more...</a>
+        <a class="meta" href="{{object.get_absolute_url}}">more...</a>
     </div>
     <p class="meta">by <b>{{article.user}}</b> on {{article.date_published|date}}</p>
     <br/>
