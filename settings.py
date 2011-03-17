@@ -114,3 +114,5 @@ DATETIME_FORMAT = 'c'
 
 #import sys
 #sys.path.append('exo')
+
+FORCE_SCRIPT_NAME = ''
