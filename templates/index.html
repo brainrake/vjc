@@ -21,8 +21,9 @@
         {% for article in article_list %}
             <div class="blog-article-list-item">
                 <h3><a href="{{article.get_absolute_url}}">{{article.title}}</a></h3>
-                {{article.content|urlize|add:2}}"<a href='{{object.get_absolute_url}}'>more...</a>"|linebreaks|truncatewords:20}}
-                
+                {% filter linebreaks|truncatewords:20 %}
+                {{article.content|urlize}} <a href='{{object.get_absolute_url}}'>more...</a>
+                {% endfilter %}
             </div>
             <p class="meta">by <b>{{article.user}}</b> on {{article.date_published|date}}</p>
             <br/>
