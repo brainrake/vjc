@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>artists</h2>
+
+{% for artist in artist_list %}
+<div>
+    <h3><a href='{{artist.get_absolute_url}}'>{{artist.name}}</a></h3>
+    <p>tira rira</p>
+</div>
+{% endfor %}
+{% endblock %}

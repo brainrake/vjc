@@ -1,27 +1,43 @@
 {% extends 'base.html' %}
 {% load i18n %}
 {% block content %}
-<div>
-    <a href="/booking/" id="bookavj" class="bigbutton left">Book a VJ</a>
-    <a href="/rental/" id="rentaprojector" class="bigbutton left">Rent Equipment</a>
-    <a href="/projects/" id="seeourprojects" class="bigbutton left">See our Projects</a>
-    <div class="clear"></div>
+
+<div class="yui-gb">
+    <div class="yui-u first">
+        <a href="/booking/" id="bookavj" class="bigbutton left">Book a VJ</a>
+    </div>
+    <div class="yui-u">
+        <a href="/rental/" id="rentaprojector" class="bigbutton left">Rent Equipment</a>
+    </div>
+    <div class="yui-u">
+        <a href="/projects/" id="seeourprojects" class="bigbutton left">See our Projects</a>
+    </div>
 </div>
 
 
-{% for article in object_list %}
-    <div class="blog-article-list-item">
-        <h3><a href="{{article.get_absolute_url}}">{{article.title}}</a></h3>
-        {{article.content|urlize|linebreaks|truncatewords:20}}
-        <p>asdasd</p>
-        <a class="meta" href="{{object.get_absolute_url}}">more...</a>
+<div class="yui-gc">
+    <div class="yui-u first">
+        <h2>Latest News</h2>
+        {% for article in article_list %}
+            <div class="blog-article-list-item">
+                <h3><a href="{{article.get_absolute_url}}">{{article.title}}</a></h3>
+                {{article.content|urlize|add:2}}"<a href='{{object.get_absolute_url}}'>more...</a>"|linebreaks|truncatewords:20}}
+                
+            </div>
+            <p class="meta">by <b>{{article.user}}</b> on {{article.date_published|date}}</p>
+            <br/>
+        {% endfor %}
+        <br/>
+        <br/>
+        <a href="{%url exo.blog.views.articles%}">older articles...</a>
     </div>
-    <p class="meta">by <b>{{article.user}}</b> on {{article.date_published|date}}</p>
-    <br/>
-{% endfor %}
-<br/>
-<br/>
-<a href="{%url exo.blog.views.articles%}">older articles...</a>
+    
+    <div class="yui-u">
+        <h2>Partners</h2>
+        <h2>Articles</h2>
+    </div>
+</div>
+
 {% endblock %}
 
 

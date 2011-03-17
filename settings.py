@@ -100,6 +100,9 @@ INSTALLED_APPS = (
     'exo.blog',
     'exo.util',
 
+    'artists',
+    #'projects',
+    
     #'vj',
     #'inventory',
     #'booking',

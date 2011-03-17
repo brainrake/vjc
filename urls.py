@@ -8,7 +8,8 @@ urlpatterns = patterns('',
     (r'^blog/', include('exo.blog.urls')),
 
 
-    #(r'^artists/', include('artists.urls')),
+    (r'^vj/', include('artists.urls')),
+    
     #(r'^projects/', include('projects.urls')),
     
     

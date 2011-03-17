@@ -1,0 +1,26 @@
+[
+  {
+    "fields": {
+      "description": "", 
+      "email": "brainrape@chaosmedia.hu", 
+      "name": "Chaosmedia", 
+      "phone": "+36704331341", 
+      "slug": "chaosmedia", 
+      "website": "http://chaosmedia.hu/"
+    }, 
+    "model": "artists.artist", 
+    "pk": 1
+  }, 
+  {
+    "fields": {
+      "description": "", 
+      "email": "", 
+      "name": "Exlex", 
+      "phone": "", 
+      "slug": "exlex", 
+      "website": "http://myspace.com/exlexvj"
+    }, 
+    "model": "artists.artist", 
+    "pk": 2
+  }
+]
