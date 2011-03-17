@@ -94,14 +94,14 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.flatpages',
-    #'django.contrib.comments',
+    'django.contrib.comments',
     
     #exo
     'exo.blog',
     'exo.util',
 
     'artists',
-    #'projects',
+    'booking',
     
     #'vj',
     #'inventory',

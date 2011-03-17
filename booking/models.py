@@ -21,3 +21,15 @@ class BookingRequest(models.Model):
 class BookingReply(models.Model):
     user = models.ForeignKey(User)
     date_created = models.DateTimeField(auto_now_add=True)
+
+
+class Equipment(models.Model):
+    TYPE_CHOICES = (( 'projector', 'projector' ),
+                    ( 'cable', 'cable' ),
+                    ( 'adapter', 'adapter' ),
+                    ( 'other', 'other'), )
+    
+    type = models.CharField(max_length=200, choices=TYPE_CHOICES)
+    name = models.CharField(max_length=200)
+    description = models.TextField()
+    price = models.IntegerField()
